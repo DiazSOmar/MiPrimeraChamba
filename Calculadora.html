@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Java</title>
+</head>
+
+<body>
+
+    <script>
+        let operacionRealizar = prompt("Elija que operacion va a realizar");
+        switch (operacionRealizar) {
+            case "suma":
+                var operacionSuma1 = parseFloat(prompt("ingrese numero"));
+                var operacionSuma2 = parseFloat(prompt("ingrese numero"));
+                if (!isNaN(operacionSuma1) && !isNaN(operacionSuma2)) {
+                    var resultadoSuma = operacionSuma1 + operacionSuma2;
+                    alert("Su resultado es: " + resultadoSuma);
+                }
+                else {
+                    alert("Ingrese un dato valido")
+
+                }
+                break;
+
+            case "resta":
+                var operacionResta1 = parseFloat(prompt("ingrese numero"));
+                var operacionResta2 = parseFloat(prompt("ingrese numero"));
+                if (!isNaN(operacionResta1) && !isNaN(operacionResta2)) {
+                    var resultadoResta = operacionResta1 - operacionResta2;
+                    alert("Su resultado es: " + resultadoResta);
+                }
+                else {
+                    alert("Ingrese un dato valido")
+                }
+                break;
+
+
+            case "multiplicacion":
+                var operacionMultiplicacion1 = parseFloat(prompt("ingrese numero"));
+                var operacionMultiplicacion2 = parseFloat(prompt("ingrese numero"));
+                if (!isNaN(operacionMultiplicacion1) && !isNaN(operacionMultiplicacion2)) {
+                    var resultadoMultiplicacion = operacionMultiplicacion1 * operacionMultiplicacion2;
+                    alert("Su resultado es: " + resultadoMultiplicacion);
+                }
+                else {
+                    alert("Ingrese un dato valido")
+                }
+                break;
+            case "division":
+                var operacionDivision1 = parseFloat(prompt("ingrese numero"));
+                var operacionDivision2 = parseFloat(prompt("ingrese numero"));
+                if (!isNaN(operacionDivision1) && !isNaN(operacionDivision2)) {
+                    var resultadoDivision = operacionDivision1 / operacionDivision2;
+                    alert("Su resultado es: " + resultadoDivision);
+                }
+                else {
+                    alert("Ingrese un dato valido")
+                }
+                break;
+
+            default:
+                alert("Operación no reconocida. Por favor, elija 'suma', 'resta', etc.");
+
+        }
+
+
+    </script>
+</body>
+
+</html>
